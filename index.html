@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="manifest" href="manifest.json">
+    </head>
+    <body>
+
+        <h1>Shivam Cloud Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Cafe name">
+                <input type="text" name="city" placeholder="city">
+                <button>Add Cafe</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+            <script>
+                const firebaseConfig = {
+                        apiKey: "AIzaSyAnzRO8wMRwKEQxuzaZtJyT769D2O09WRM",
+                        authDomain: "fir-firestore-learn-593e6.firebaseapp.com",
+                        projectId: "fir-firestore-learn-593e6",
+                        storageBucket: "fir-firestore-learn-593e6.appspot.com",
+                        messagingSenderId: "239055113716",
+                        appId: "1:239055113716:web:29366d7a63e705f3e57da1"
+                };
+                firebase.initializeApp(firebaseConfig);
+                const db = firebase.firestore();
+                db.settings({ timestampsInSnapshots: true });    
+
+                
+
+
+
+        </script>
+
+        <script src="app.js"></script>
+    </body>
+</html>
